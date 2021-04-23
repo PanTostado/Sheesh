@@ -1,0 +1,40 @@
+import random
+myList = []
+
+def mainProgram():
+    while True:
+     try:
+        print("Hello there! Lets work with lists!")
+        print("Choose from the following options. Type a number")
+        choice = input("""1. Add to a list or
+2. Add a bunch of numbers
+3. Return a value at an index
+4. Random search
+5. Linear Search
+6. Recursive Binary Search
+7. Sort List
+8. Print contents of list
+9. Quit program""")
+         if choice == "1":
+            addToList()
+        elif choice == "2":
+            addABunch()
+        elif choice == "3":
+            indexValues()
+        elif choice == "4":
+            randomSearch()
+        elif choice == "5":
+            linearSearch()
+        elif choice == "6':
+            print(myList)
+        else:
+            break
+    except:
+        print("You made a whoopsie!")
+
+def addToList():       
+    print("Adding to a list! Great choice!")
+    newItem = input("Type an integer here!   ")
+    myList.append(int(newItem))
+
+def addABunch():
